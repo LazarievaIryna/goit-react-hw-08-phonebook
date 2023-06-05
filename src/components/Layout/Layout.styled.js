@@ -1,9 +1,7 @@
 
 import styled from 'styled-components';
-export const Wrapper = styled.main`
- display: flex;
- flex-direction: column;
-    justify-content: center;
-    
-    align-items: center;
+export const Wrapper = styled.div`
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 0 16px;
 `;
