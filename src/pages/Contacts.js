@@ -10,7 +10,7 @@ import { Loader } from 'components/Loader/Loader';
 
 
 
-export const Contacts = () => {
+export default function Contacts  ()  {
     const dispatch = useDispatch();
     const contacts = useSelector(selectContacts);
     const isLoading = useSelector(selectIsLoading);
