@@ -2,10 +2,10 @@
 export const UserMenu=()=>{
     return (
         <div >
-          {/* <p >Welcome, </p>
+          <p >Welcome, </p>
           <button type="button" >
             Logout
-          </button> */}
+          </button>
         </div>
       );
 }
