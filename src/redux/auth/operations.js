@@ -21,8 +21,7 @@ const setAuthHeader = token => {
             console.log(credentials)
           try {
             const res = await axios.post('/users/signup', credentials);
-            
-            // After successful registration, add the token to the HTTP header
+          
             setAuthHeader(res.data.token);
             // console.log(res.data.token)
             return res.data;
