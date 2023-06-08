@@ -29,7 +29,7 @@ const handlePending = state => {
    
   }
   const deleteContactReducer = (state, action)=>{
-    const index = state.items.findIndex(task => task.id === action.payload.id);
+    const index = state.items.findIndex(item => item.id === action.payload.id);
   state.items.splice(index, 1);
 
   }
