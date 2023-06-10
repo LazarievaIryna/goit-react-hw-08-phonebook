@@ -1,4 +1,11 @@
 import { useDispatch } from 'react-redux';
+
+import { Input,InputGroup,InputLeftElement, FormLabel, Button, Box} from '@chakra-ui/react'
+// import { IconButton } from '@chakra-ui/react'
+import {  EmailIcon, LockIcon} from '@chakra-ui/icons'
+
+
+
 import { logIn } from 'redux/auth/operations';
 // import css from './LoginForm.module.css';
 
@@ -18,16 +25,33 @@ export const LoginForm = () => {
   };
 
   return (
-    <form  onSubmit={handleSubmit} autoComplete="off">
-      <label >
-        Email
-        <input type="email" name="email" />
-      </label>
-      <label >
-        Password
-        <input type="password" name="password" />
-      </label>
-      <button type="submit">Log In</button>
-    </form>
+    <Box as='form' w='auto'  onSubmit={handleSubmit} autoComplete="off">
+      
+      <InputGroup mb='10px'>
+    <InputLeftElement bottom='0px' top='28px'  children={<EmailIcon color='black.300' />}/>
+
+    
+    <FormLabel width='300px' m='0' >
+    Email
+    <Input type="email" name="email" variant='filled' pl='35px' mt='5px' mb='10px' />
+    </FormLabel>
+  </InputGroup>
+
+  <InputGroup mb='10px'>
+    <InputLeftElement bottom='0px' top='29px'  children={<LockIcon color='black.300' />}/>
+    <FormLabel  width='300px' m='0'>
+    Password
+    <Input type="password" name="password" variant='filled' pl='35px' mt='5px' mb='10px'/>
+    </FormLabel>
+  </InputGroup>
+
+
+
+<Button colorScheme='pink' type="submit" color='black' size='md'
+  height='48px'
+  width='-webkit-fill-available'
+ marginTop='10px'
+  >Log In</Button>
+    </Box>
   );
 };
