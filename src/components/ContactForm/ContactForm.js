@@ -69,6 +69,7 @@ export const ContactForm=()=>{
     type="text" 
     name="name" 
     value={name}  
+    variant='filled'
     pl='35px' 
     mt='5px' 
     mb='10px' 
@@ -88,7 +89,8 @@ export const ContactForm=()=>{
     <Input 
     type="tel" 
     name="number" 
-    value={number}  
+    value={number} 
+    variant='filled' 
     pl='35px' 
     mt='5px' 
     mb='10px' 

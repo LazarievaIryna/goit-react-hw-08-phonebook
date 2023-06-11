@@ -27,14 +27,12 @@ export const RegisterForm = () => {
     <InputLeftElement bottom='0px' top='29px'  children={<CheckCircleIcon color='black.300' />}/>
     <FormLabel width='300px' m='0' >
     Username
-    <Input type="text" name="name" pl='35px' mt='5px' mb='10px' />
+    <Input type="text" name="name" variant='filled' pl='35px' mt='5px' mb='10px' />
     </FormLabel>
   </InputGroup>
 
        <InputGroup mb='10px'>
-    <InputLeftElement bottom='0px' top='29px'   children={<EmailIcon color='black.300' />}/>
-      
-    
+       <InputLeftElement bottom='0px' top='29px'  children={<EmailIcon color='black.300' />}/>
     <FormLabel width='300px' m='0' >
     Email
     <Input type="email" name="email" variant='filled' pl='35px' mt='5px' mb='10px'/>
@@ -51,6 +49,7 @@ export const RegisterForm = () => {
     <Input type="password" name="password" variant='filled' pl='35px' mt='5px' mb='10px'/>
     </FormLabel>
     </InputGroup>
+
     <Button colorScheme='pink' type="submit" color='black' size='md'
   height='48px'
   width='-webkit-fill-available'

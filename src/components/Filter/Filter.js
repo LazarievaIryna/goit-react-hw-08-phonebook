@@ -19,7 +19,7 @@ export const Filter=()=>{
     
 
     <Input type="text" name="filter"  value={filter}
-    onChange={event=> dispatch(setFilter(event.target.value))}  pl='35px' mt='5px' mb='10px' />
+    onChange={event=> dispatch(setFilter(event.target.value))} variant='filled'  pl='35px' mt='5px' mb='10px' />
     
   </InputGroup>
 
