@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
-
+import { Box } from '@chakra-ui/react'
 import { ContactItem } from '../ContactItem/ContactItem';
-import { List } from './ContactList.styled';
+
 import { selectVisibleContacts } from 'redux/contacts/selectors';
 
 export const ContactList=()=>{
@@ -10,11 +10,11 @@ export const ContactList=()=>{
     const visibleContacts=useSelector(selectVisibleContacts)
     
     return(
-        <List>
+        <Box as='ul' minWidth='300px' >
       {visibleContacts.map(contact=>(
         <ContactItem key={contact.id} contact={contact}/>
       ))
       }
-    </List>
+    </Box>
     )
 }

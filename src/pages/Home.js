@@ -12,8 +12,6 @@ export default function Home(){
 try it!
   </AbsoluteCenter>
 </Box>
-        // <div>
-        //     <h1>Welcome page</h1>
-        // </div>
+     
     )
 }

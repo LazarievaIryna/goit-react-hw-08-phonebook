@@ -1,7 +1,7 @@
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { ContactList } from 'components/ContactList/ContactList';
 import { useEffect } from 'react';
-import { Box, Flex } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import {  useDispatch, useSelector } from 'react-redux';
 import { Error } from 'components/Error/Error';
 import { fetchContacts } from 'redux/contacts/operations';
@@ -28,7 +28,7 @@ export default function Contacts  ()  {
       <Box display='flex'flexDirection='column' alignItems='center'>
         <h1>Phonebook</h1>
         <ContactForm/>
-        {/* <h2>Contacts</h2> */}
+     
         {error && <Error>{error}</Error>}
         {contacts.length > 0 && (
           <>

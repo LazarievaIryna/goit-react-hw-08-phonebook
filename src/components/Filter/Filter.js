@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
 
-import { Input,  InputGroup, InputLeftElement, Box} from '@chakra-ui/react'
-import { SearchIcon} from '@chakra-ui/icons'
+import { Input,  InputGroup, Box} from '@chakra-ui/react'
+
 
 import { setFilter } from "redux/contacts/filtersSlice"
 
@@ -23,10 +23,6 @@ export const Filter=()=>{
     
   </InputGroup>
 
-    {/* <input type="text" 
-    name="filter"
-    value={filter}
-    onChange={event=> dispatch(setFilter(event.target.value))} 
-    /> */}
+   
     </Box>)
 }

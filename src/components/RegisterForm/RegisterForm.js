@@ -1,11 +1,7 @@
 import { useDispatch } from 'react-redux';
-
-// import { BiSolidUserPlus } from "react-icons/bi";
 import { Input,InputGroup,InputLeftElement, FormLabel, Button, Box} from '@chakra-ui/react'
 import { LockIcon, EmailIcon, CheckCircleIcon} from '@chakra-ui/icons'
-
 import { register } from 'redux/auth/operations';
-// import css from './RegisterForm.module.css';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -13,7 +9,7 @@ export const RegisterForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;
-    // console.log(form.elements.name.value)
+    
     dispatch(
       register({
         name: form.elements.name.value,
@@ -34,8 +30,6 @@ export const RegisterForm = () => {
     <Input type="text" name="name" pl='35px' mt='5px' mb='10px' />
     </FormLabel>
   </InputGroup>
-
-
 
        <InputGroup mb='10px'>
     <InputLeftElement bottom='0px' top='29px'   children={<EmailIcon color='black.300' />}/>

@@ -1,13 +1,8 @@
 import { useDispatch } from 'react-redux';
-
 import { Input,InputGroup,InputLeftElement, FormLabel, Button, Box} from '@chakra-ui/react'
-// import { IconButton } from '@chakra-ui/react'
 import {  EmailIcon, LockIcon} from '@chakra-ui/icons'
-
-
-
 import { logIn } from 'redux/auth/operations';
-// import css from './LoginForm.module.css';
+
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
